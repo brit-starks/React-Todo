@@ -50,12 +50,32 @@ class App extends React.Component {
       })
     })
   };
+
+  addTask = (e, task) => {
+    e.preventDefault();
+    const taskName = this.state.tasks.filter(
+      item => item.task === task
+    );
+
+    if(taskName.length === 0) {
+      const newTask = {
+        task: task,
+        id: Date.now(),
+        completed: false
+      };
+
+  this.setState({
+    tasks: [...this.state.tasks, newTask]
+  });
+  }
+}
+
     
     render() {
       return (
         <div className='App'>
           <h1 className='title'>Todo App</h1>
-          <TodoForm />
+          <TodoForm addTask={this.addTask}/>
           <TodoList task={this.state.tasks} toggleTask={this.toggleTask} />
         </div>
       );
