@@ -1,0 +1,41 @@
+html {
+  background-color: rosybrown;
+}
+
+/* -----App Begin----- */
+
+.App {
+  /* background-color: rosybrown; */
+  border-radius: 5rem;
+  /* width: 35rem; */
+}
+
+.title {
+  color: pink;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* -----App End----- */
+
+/* -----Todo List Begin----- */
+
+.tasks {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* -----Todo List End----- */
+
+/* -----Todo Begin----- */
+
+.task {
+  background-color: pink;
+  margin: 1.2rem auto;
+  width: 16rem;
+  border-radius: 1rem;
+}
+/* -----Todo End----- */
+
+/* -----Form Begin----- */

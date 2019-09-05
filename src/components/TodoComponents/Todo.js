@@ -1,8 +1,11 @@
 import React from 'react';
+
+import '../../Todo.css';
+
 const Todo = props => {
   return (
-    <div>
-      <h3>{props.todo.task}</h3>
+    <div className={`todo${props.todo.completed ? ' complete' : ''}`}>
+      <p className='task'>{props.todo.task}</p>
     </div>
   )
 }
