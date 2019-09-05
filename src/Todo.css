@@ -5,13 +5,19 @@
 /* -----App Begin----- */
 
 .App {
-  /* background-color: rosybrown; */
   border-radius: 5rem;
   /* width: 35rem; */
 }
 
+.app-header{
+  display: flex;
+  margin: 1rem 0 2rem 34rem;
+}
+
 .title {
   color: pink;
+  font-size: 3rem;
+  margin-right: 3rem;
   text-align: center;
   text-decoration: underline;
 }
@@ -47,9 +53,18 @@
 .input {
   height: 1.5rem;
   border-radius: 1rem;
+  margin: 2rem 0 0 3rem;
 }
 
 .input-btn {
+  margin: 0 0 0 1rem;
+  border-radius: 18px;
+  padding: 10px;
   color: gray;
   background-color: pink;
 }
+
+  button:hover{
+    background-color: palevioletred;
+    color: pink;
+  }
