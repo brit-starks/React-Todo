@@ -70,17 +70,24 @@ class App extends React.Component {
   }
 }
 
+clearComplete = e => {
+  e.preventDefault();
+  this.setState({
+    tasks: this.state.tasks.filter(task => !task.complete)
+  });
+}
+
     
     render() {
       return (
         <div className='App'>
           
           <div className='app-header'>
-          <h1 className='title'>Todo App</h1>
-          <TodoForm addTask={this.addTask}/>
+            <h1 className='title'>Todo App</h1>
+            <TodoForm addTask={this.addTask}/>
           </div>
 
-          <TodoList task={this.state.tasks} toggleTask={this.toggleTask} />
+          <TodoList task={this.state.tasks} toggleTask={this.toggleTask} taskComplete={this.clearComplete}/>
         </div>
       );
     }
