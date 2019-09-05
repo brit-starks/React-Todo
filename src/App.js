@@ -41,7 +41,14 @@ class App extends React.Component {
   }
 
   toggleTask = (taskId) => {
-
+    this.setState({
+      tasks: this.state.tasks.map(task => {
+        if (task.id === taskId) {
+          return { ...task, complete: !task.completed};
+        }
+        return task;
+      })
+    })
   };
     
     render() {
@@ -49,7 +56,7 @@ class App extends React.Component {
         <div className='App'>
           <h1 className='title'>Todo App</h1>
           <TodoForm />
-          <TodoList task={this.state.tasks} />
+          <TodoList task={this.state.tasks} toggleTask={this.toggleTask} />
         </div>
       );
     }

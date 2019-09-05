@@ -1,4 +1,4 @@
-html {
+ body{
   background-color: rosybrown;
 }
 
@@ -26,6 +26,10 @@ html {
   flex-flow: column wrap;
 }
 
+.task.complete {
+  text-decoration: line-through;
+}
+
 /* -----Todo List End----- */
 
 /* -----Todo Begin----- */
@@ -39,3 +43,13 @@ html {
 /* -----Todo End----- */
 
 /* -----Form Begin----- */
+
+.input {
+  height: 1.5rem;
+  border-radius: 1rem;
+}
+
+.input-btn {
+  color: gray;
+  background-color: pink;
+}

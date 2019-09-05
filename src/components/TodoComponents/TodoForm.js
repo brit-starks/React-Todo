@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../../Todo.css';
+
 class TodoForm extends React.Component {
   constructor() {
     super();
@@ -12,7 +14,7 @@ class TodoForm extends React.Component {
     return(
       <form>
         <input type='text' name='task' value={this.state.task} className='input' />
-        <button>Add Task</button>
+        <button className='input-btn'>Add Task</button>
       </form>
     );
   }

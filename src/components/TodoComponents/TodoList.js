@@ -5,8 +5,8 @@ const TodoList = (props) => {
   console.log(props);
   return (
   <div className='tasks'>
-    {props.task.map( item => (
-      <Todo key={item.id} todo={item} />
+    {props.task.map( task => (
+      <Todo key={task.id} task={task} toggleTask={props.toggleTask}/>
     ))}
   </div>
   )
