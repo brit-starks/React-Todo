@@ -1,0 +1,78 @@
+ body{
+  background-color: rosybrown;
+}
+
+/* -----App Begin----- */
+
+.App {
+  border-radius: 5rem;
+  /* width: 35rem; */
+}
+
+.app-header{
+  display: flex;
+  margin: 1rem 0 2rem 34rem;
+}
+
+.title {
+  color: pink;
+  font-size: 3rem;
+  margin-right: 3rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* -----App End----- */
+
+/* -----Todo List Begin----- */
+
+.tasks {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.task.complete {
+  text-decoration: line-through;
+}
+
+.clear-btn {
+  width: 9rem;
+  height: 2rem;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  color: gray;
+}
+
+/* -----Todo List End----- */
+
+/* -----Todo Begin----- */
+
+.task {
+  background-color: pink;
+  margin: 1.2rem auto;
+  width: 16rem;
+  border-radius: 1rem;
+}
+/* -----Todo End----- */
+
+/* -----Form Begin----- */
+
+.input {
+  height: 1.5rem;
+  border-radius: 1rem;
+  margin: 2rem 0 0 3rem;
+}
+
+.input-btn {
+  margin: 0 0 0 1rem;
+  border-radius: 18px;
+  padding: 10px;
+  color: gray;
+  background-color: pink;
+}
+
+  button:hover{
+    background-color: palevioletred;
+    color: pink;
+  }
